@@ -1,0 +1,19 @@
+{
+    "name": "dlt-connect-libs",
+    "private": true,
+    "version": "0.0.0",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "lerna": "^3.20.2",
+        "prettier": "^2.0.5"
+    },
+    "scripts": {
+        "build": "lerna run build",
+        "format:verify": "prettier --list-different .",
+        "lint": "lerna run lint --no-sort --stream",
+        "test": "lerna run test --no-sort"
+    },
+    "workspaces": [
+        "packages/*"
+    ]
+}

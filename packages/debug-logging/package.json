@@ -1,0 +1,39 @@
+{
+    "name": "@splunkdlt/debug-logging",
+    "author": "Splunk",
+    "version": "1.0.0",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/debug-logging",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/splunk/dlt-connect-libs",
+        "directory": "packages/debug-logging"
+    },
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "module": "dist/debug-logging.esm.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=12"
+    },
+    "scripts": {
+        "start": "tsdx watch",
+        "build": "tsdx build --target node",
+        "test": "tsdx test",
+        "lint": "eslint src test --ext .ts --config .eslintrc",
+        "prepare": "yarn build"
+    },
+    "dependencies": {
+        "debug": "^4.1.1"
+    },
+    "devDependencies": {
+        "@splunkdlt/eslint-config-dlt-connect-lib": "1.0.0",
+        "@types/debug": "^4.1.5",
+        "tsdx": "^0.13.2",
+        "tslib": "^1.12.0",
+        "typescript": "^3.8.3"
+    }
+}

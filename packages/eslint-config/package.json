@@ -1,0 +1,28 @@
+{
+    "name": "@splunkdlt/eslint-config-dlt-connect-lib",
+    "version": "1.0.0",
+    "author": "Splunk",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/eslint-config",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/splunk/dlt-connect-libs",
+        "directory": "packages/eslint-config"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.10.0",
+        "@typescript-eslint/parser": "^2.10.0",
+        "eslint": "^6.7.2",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "prettier": "^2.0.5"
+    },
+    "peerDependencies": {
+        "typescript": ">= 3.7.0-beta"
+    },
+    "scripts": {
+        "build": "echo noop",
+        "lint": "echo noop",
+        "test": "echo noop"
+    }
+}
