@@ -1,6 +1,6 @@
 {
     "name": "@splunkdlt/eslint-config-dlt-connect-lib",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Splunk",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/eslint-config",
