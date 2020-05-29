@@ -22,7 +22,8 @@
     "scripts": {
         "start": "tsdx watch",
         "build": "tsdx build --target node",
-        "test": "tsdx test",
+        "test": "tsdx test ./test --verbose",
+        "test:integration": "tsdx test ./integration --verbose",
         "lint": "eslint src test --ext .ts --config .eslintrc",
         "prepare": "yarn build"
     },

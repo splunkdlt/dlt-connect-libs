@@ -1,0 +1,50 @@
+name: HEC Client Integration Tests
+
+on:
+    pull_request:
+        paths:
+            - 'packages/hec-client/**'
+
+jobs:
+    hec-integration:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                splunk: [8.0.4, 7.3.5, 7.2.10.1]
+        services:
+            splunk:
+                image: splunk/splunk:${{ matrix.splunk }}
+                ports:
+                    - 8089/tcp
+                    - 8088/tcp
+                env:
+                    SPLUNK_START_ARGS: --accept-license
+                    SPLUNK_HEC_TOKEN: 11111111-1111-1111-1111-1111111111113
+                    SPLUNK_PASSWORD: changeme
+                    SPLUNK_DEFAULTS_URL: https://u:${{ secrets.GITHUB_TOKEN }}@raw.githubusercontent.com/splunk/dlt-connect-libs/${{ github.sha }}/packages/hec-client/integration/splunk.yml
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - uses: actions/cache@v1
+              with:
+                  path: node_modules
+                  key: nodeModules-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      nodeModules-
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+              env:
+                  CI: true
+            - name: Build
+              run: yarn build
+              env:
+                  CI: true
+            - name: Run integration tests
+              run: yarn workspace @splunkdlt/hec-client test:integration
+              env:
+                  CI: true
+                  SPLUNK_VERSION: ${{ matrix.splunk }}
+                  SPLUNK_SPLUNKD_URL: https://localhost:${{ job.services.splunk.ports[8089] }}
+                  SPLUNK_HEC_URL: https://localhost:${{ job.services.splunk.ports[8088] }}
