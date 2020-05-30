@@ -3,9 +3,18 @@
     "private": true,
     "version": "0.0.0",
     "license": "Apache-2.0",
+    "workspaces": [
+        "packages/*"
+    ],
     "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "husky": "^4.2.5",
         "lerna": "^3.20.2",
-        "prettier": "^2.0.5"
+        "prettier": "^2.0.5",
+        "pretty-quick": "^2.0.1",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.3"
     },
     "scripts": {
         "build": "lerna run build",
@@ -13,7 +22,10 @@
         "lint": "lerna run lint --no-sort --stream",
         "test": "lerna run test --no-sort"
     },
-    "workspaces": [
-        "packages/*"
-    ]
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    }
 }
