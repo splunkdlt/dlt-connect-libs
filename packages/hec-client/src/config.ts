@@ -54,7 +54,7 @@ export interface HecConfig {
     /** Maximum number of sockets HEC will use (per host) */
     maxSockets?: number;
     /** User-agent header sent to HEC
-     * @default `ethlogger-hec-client/<version>`
+     * @default `splunk-hec-client/1.0`
      * @see [Use variables in metadata](#metadata-variables)
      */
     userAgent?: string;

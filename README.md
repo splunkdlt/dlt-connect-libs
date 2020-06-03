@@ -1,6 +1,6 @@
 # Splunk DLT Connector Libraries
 
-This repository hosts a set of common, shared libraries used in TypeScript-based data connectors by the Splunk DLT team. Libraries are written in TypeScript and published as NPM libraries in the `@splunkdlt` NPM organization.
+This repository hosts a set of common, shared libraries used in TypeScript-based data connectors by the Splunk DLT team. Libraries are written in TypeScript and published as NPM libraries in the `@splunkdlt` NPM organization. All libraries are designed to be used in Node.js and are not tested or expected to work in the browser.
 
 <!-- PACKAGE-LIST -->
 

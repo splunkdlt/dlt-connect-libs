@@ -20,7 +20,10 @@
         "build": "lerna run build",
         "format:verify": "prettier --list-different .",
         "lint": "lerna run lint --no-sort --stream",
-        "test": "lerna run test --no-sort"
+        "test": "lerna run test --no-sort",
+        "generate:readme-pkg-list": "ts-node scripts/generate-readme-package-list.ts",
+        "generate:readme-examples": "ts-node scripts/replace-examples.ts",
+        "generate:all": "yarn generate:readme-examples && yarn generate:readme-pkg-list"
     },
     "husky": {
         "hooks": {
