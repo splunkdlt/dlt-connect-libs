@@ -16,7 +16,7 @@ const CONFIG_DEFAULTS = {
     maxSockets: 256,
     userAgent: 'splunk-hec-client/1.0',
     retryWaitTime: 10_000,
-    multipleMetricFormatEnabled: false,
+    multipleMetricFormatEnabled: true,
 };
 
 /** Settings for the Splunk HTTP Event Collector client */
@@ -54,17 +54,19 @@ export interface HecConfig {
     /** Maximum number of sockets HEC will use (per host) */
     maxSockets?: number;
     /** User-agent header sent to HEC
-     * @default `ethlogger-hec-client/<version>`
+     * @default `splunk-hec-client/1.0`
      * @see [Use variables in metadata](#metadata-variables)
      */
     userAgent?: string;
     /** Wait time before retrying to send a (batch of) HEC messages after an error */
     retryWaitTime?: WaitTime;
     /**
-     * Enable sending multipe metrics in a single message to HEC.
+     * Enables sending multipe metrics in a single message to HEC.
      * Supported as of Splunk 8.0.0
      *
      * https://docs.splunk.com/Documentation/Splunk/8.0.0/Metrics/GetMetricsInOther#The_multiple-metric_JSON_format
+     *
+     * This is enabled by default. Set to false if you want to send to an older version of Splunk.
      */
     multipleMetricFormatEnabled?: boolean;
 }
