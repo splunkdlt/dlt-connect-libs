@@ -23,13 +23,19 @@ test('cachedAsync', async () => {
         return k + i;
     };
 
+    const first = cachedAsync('foo', cache, producer);
+    expect(i).toBe(1);
+    const second = cachedAsync('foo', cache, producer);
+    expect(i).toBe(1); // producer only called once
+    await expect(first).resolves.toBe('foo1');
+    await expect(second).resolves.toBe('foo1');
     await expect(cachedAsync('foo', cache, producer)).resolves.toBe('foo1');
     await expect(cachedAsync('foo', cache, producer)).resolves.toBe('foo1');
     await expect(cachedAsync('foo', cache, producer)).resolves.toBe('foo1');
-    await expect(cachedAsync('foo', cache, producer)).resolves.toBe('foo1');
-    await expect(cachedAsync('foo', cache, producer)).resolves.toBe('foo1');
-    await expect(cachedAsync('foo', cache, producer)).resolves.toBe('foo1');
+
     await expect(cachedAsync('bar', cache, producer)).resolves.toBe('bar2');
+
     await expect(cachedAsync('ding', cache, producer)).rejects.toMatchInlineSnapshot(`[Error: rejecto]`);
+
     await expect(cachedAsync('ding', cache, producer)).resolves.toBe('ding4');
 });
