@@ -42,7 +42,7 @@ async function main() {
     const yarnInfo = JSON.parse(execSync('yarn -s workspaces info').toString('utf-8'));
     const markdownContents = Object.keys(yarnInfo).map((pkg) => {
         const path: string = yarnInfo[pkg].location;
-        return `### [\`${pkg}\`](./${path})\n\n${generateVersionBadge(pkg)}\n\n${extractDescription(path)}`;
+        return `### [\`${pkg}\`](./${path}) ${generateVersionBadge(pkg)}\n\n${extractDescription(path)}`;
     });
     const updatedContents = replaceContent(originalContents, 'PACKAGE-LIST', markdownContents.join('\n\n'));
     writeFileSync(readmePath, updatedContents, { encoding: 'utf-8' });

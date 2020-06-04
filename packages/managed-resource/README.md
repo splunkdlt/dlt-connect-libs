@@ -34,7 +34,7 @@ class TestResource implements ManagedResource {
 
     async shutdown() {
         console.log('Shutting down test resource');
-        sleep(500);
+        await sleep(500);
         console.log('Test resource shutdown complete');
     }
 }
