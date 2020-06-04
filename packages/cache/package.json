@@ -1,7 +1,7 @@
 {
     "name": "@splunkdlt/cache",
     "author": "Splunk",
-    "version": "1.0.0-alpha1.0",
+    "version": "1.0.0",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/cache",
     "repository": {
