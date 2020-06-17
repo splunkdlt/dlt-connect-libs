@@ -35,15 +35,15 @@ Please make sure to read and observe our [Code of Conduct](CODE_OF_CONDUCT.md). 
 
 ##### Setup Development Environment
 
-// TODO
+Check out the [developer documentation](./DEVELOPING.md)
 
 ##### Code Style
 
-// TODO
+See [code style guidance](./DEVELOPING.md#code-style) in the developer documentation.
 
 ##### Testing
 
-// TODO
+See [testing section](./DEVELOPING.md#run-tests) in the developer docs.
 
 ## Contribution Workflow
 
