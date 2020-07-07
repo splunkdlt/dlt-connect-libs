@@ -1,13 +1,4 @@
-export function versionSupportsMultiMetrics(splunkVersion: string = ''): boolean {
-    if (!splunkVersion.trim()) {
-        return false;
-    }
-    const major = parseInt(splunkVersion.split('.')[0], 10);
-    if (isNaN(major)) {
-        throw new Error(`Invalid Splunk version ${splunkVersion}`);
-    }
-    return major >= 8;
-}
+import { versionSupportsMultiMetrics } from '../src';
 
 const GH_ACTIONS_SPLUNK = {
     name: `Splunk ${process.env.SPLUNK_VERSION}`,
