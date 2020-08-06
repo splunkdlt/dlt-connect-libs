@@ -1,5 +1,7 @@
 # @splunkdlt/hec-client
 
+![Integration Tests](https://github.com/splunk/dlt-connect-libs/workflows/HEC%20Client%20Integration%20Tests/badge.svg)
+
 Flexible client library for Splunk HTTP Event Collector (HEC) with support for sending metrics and events, batching, compression, keep-alives and retries.
 
 ## Install and Use
