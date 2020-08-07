@@ -9,11 +9,14 @@ This repository contains a monorepo where multiple packages are managed using Ya
 -   [Node.js](https://nodejs.org/) 12
 -   [Yarn package manager](https://yarnpkg.com/) (recent/latest version)
 
-1. Clone the respository
+1. Clone the repository
 2. Install dependencies
 
 ```sh-session
 $ yarn install
+
+# build all packages once, so imports between them work
+$ yarn build
 ```
 
 ## Build
@@ -220,7 +223,7 @@ Packages are published from the master branch, using lerna semantic-release-like
 $ yarn lerna publish --conventional-commits --no-commit-hooks
 ```
 
-This requires access to Git and NPM (the splunkdlt scope). There is currently no CI setup for automated publishing of packages.
+This requires access to Git and NPM (the @splunkdlt scope). There is currently no CI setup for automated publishing of packages.
 
 ### Pre-releases
 
