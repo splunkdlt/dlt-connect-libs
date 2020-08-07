@@ -1,2 +1,3 @@
 packages/*/dist
 .vscode
+CHANGELOG.md
