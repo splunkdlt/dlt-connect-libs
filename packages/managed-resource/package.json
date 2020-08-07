@@ -1,7 +1,7 @@
 {
     "name": "@splunkdlt/managed-resource",
     "author": "Splunk",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/managed-resource",
     "repository": {

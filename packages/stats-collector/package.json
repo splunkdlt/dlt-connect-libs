@@ -1,7 +1,7 @@
 {
     "name": "@splunkdlt/stats-collector",
     "author": "Splunk",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/stats-collector",
     "repository": {
@@ -27,7 +27,7 @@
         "prepare": "yarn build"
     },
     "dependencies": {
-        "@splunkdlt/managed-resource": "^1.0.0"
+        "@splunkdlt/managed-resource": "^1.0.1"
     },
     "devDependencies": {
         "@splunkdlt/eslint-config-dlt-connect-lib": "^1.0.1",
