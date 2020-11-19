@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseLine parses fixture files 1`] = `
+Array [
+  Object {
+    "helpText": "The total number of HTTP requests.",
+    "metricName": "http_requests_total",
+    "type": "help",
+  },
+  Object {
+    "metricName": "http_requests_total",
+    "type": "type-info",
+    "typeName": "counter",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "method",
+        "value": "post",
+      },
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+    ],
+    "metricName": "http_requests_total",
+    "timestamp": "1395066363000",
+    "type": "metric",
+    "value": "1027",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "method",
+        "value": "post",
+      },
+      Object {
+        "name": "code",
+        "value": "400",
+      },
+    ],
+    "metricName": "http_requests_total",
+    "timestamp": "1395066363000",
+    "type": "metric",
+    "value": "3",
+  },
+  Object {
+    "type": "empty",
+  },
+  Object {
+    "commentText": "Escaping in label values:",
+    "type": "comment",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "path",
+        "value": "C:\\\\DIR\\\\FILE.TXT",
+      },
+      Object {
+        "name": "error",
+        "value": "Cannot find file:
+\\"FILE.TXT\\"",
+      },
+    ],
+    "metricName": "msdos_file_access_time_seconds",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "1.458255915e9",
+  },
+  Object {
+    "type": "empty",
+  },
+  Object {
+    "commentText": "Minimalistic line:",
+    "type": "comment",
+  },
+  Object {
+    "labels": Array [],
+    "metricName": "metric_without_timestamp_and_labels",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "12.47",
+  },
+  Object {
+    "type": "empty",
+  },
+  Object {
+    "commentText": "A weird metric from before the epoch:",
+    "type": "comment",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "problem",
+        "value": "division by zero",
+      },
+    ],
+    "metricName": "something_weird",
+    "timestamp": "-3982045",
+    "type": "metric",
+    "value": "+Inf",
+  },
+  Object {
+    "type": "empty",
+  },
+  Object {
+    "commentText": "A histogram, which has a pretty complex representation in the text format:",
+    "type": "comment",
+  },
+  Object {
+    "helpText": "A histogram of the request duration.",
+    "metricName": "http_request_duration_seconds",
+    "type": "help",
+  },
+  Object {
+    "metricName": "http_request_duration_seconds",
+    "type": "type-info",
+    "typeName": "histogram",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "le",
+        "value": "0.05",
+      },
+    ],
+    "metricName": "http_request_duration_seconds_bucket",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "24054",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "le",
+        "value": "0.1",
+      },
+    ],
+    "metricName": "http_request_duration_seconds_bucket",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "33444",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "le",
+        "value": "0.2",
+      },
+    ],
+    "metricName": "http_request_duration_seconds_bucket",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "100392",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "le",
+        "value": "0.5",
+      },
+    ],
+    "metricName": "http_request_duration_seconds_bucket",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "129389",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "le",
+        "value": "1",
+      },
+    ],
+    "metricName": "http_request_duration_seconds_bucket",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "133988",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "le",
+        "value": "+Inf",
+      },
+    ],
+    "metricName": "http_request_duration_seconds_bucket",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "144320",
+  },
+  Object {
+    "labels": Array [],
+    "metricName": "http_request_duration_seconds_sum",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "53423",
+  },
+  Object {
+    "labels": Array [],
+    "metricName": "http_request_duration_seconds_count",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "144320",
+  },
+  Object {
+    "type": "empty",
+  },
+  Object {
+    "commentText": "Finally a summary, which has a complex representation, too:",
+    "type": "comment",
+  },
+  Object {
+    "helpText": "A summary of the response latency.",
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "type": "help",
+  },
+  Object {
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "type": "type-info",
+    "typeName": "summary",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "quantile",
+        "value": "0.01",
+      },
+    ],
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "3102",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "quantile",
+        "value": "0.05",
+      },
+    ],
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "3272",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "quantile",
+        "value": "0.5",
+      },
+    ],
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "4773",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "quantile",
+        "value": "0.9",
+      },
+    ],
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "9001",
+  },
+  Object {
+    "labels": Array [
+      Object {
+        "name": "quantile",
+        "value": "0.99",
+      },
+    ],
+    "metricName": "telemetry_requests_metrics_latency_microseconds",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "76656",
+  },
+  Object {
+    "labels": Array [],
+    "metricName": "telemetry_requests_metrics_latency_microseconds_sum",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "1.7560473e+07",
+  },
+  Object {
+    "labels": Array [],
+    "metricName": "telemetry_requests_metrics_latency_microseconds_count",
+    "timestamp": undefined,
+    "type": "metric",
+    "value": "2693",
+  },
+  Object {
+    "type": "empty",
+  },
+]
+`;

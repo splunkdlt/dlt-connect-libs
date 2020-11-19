@@ -1,0 +1,6274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseText parses example1.txt 1`] = `
+Array [
+  Object {
+    "help": "The total number of HTTP requests.",
+    "labels": Array [
+      Object {
+        "name": "method",
+        "value": "post",
+      },
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": "1395066363000",
+    "type": "counter",
+    "value": "1027",
+  },
+  Object {
+    "help": "The total number of HTTP requests.",
+    "labels": Array [
+      Object {
+        "name": "method",
+        "value": "post",
+      },
+      Object {
+        "name": "code",
+        "value": "400",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": "1395066363000",
+    "type": "counter",
+    "value": "3",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.05",
+        "24054",
+      ],
+      Array [
+        "0.1",
+        "33444",
+      ],
+      Array [
+        "0.2",
+        "100392",
+      ],
+      Array [
+        "0.5",
+        "129389",
+      ],
+      Array [
+        "1",
+        "133988",
+      ],
+      Array [
+        "+Inf",
+        "144320",
+      ],
+    ],
+    "count": "144320",
+    "labels": Array [],
+    "name": "http_request_duration_seconds",
+    "sum": "53423",
+    "type": "histogram",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.01",
+        "3102",
+      ],
+      Array [
+        "0.05",
+        "3272",
+      ],
+      Array [
+        "0.5",
+        "4773",
+      ],
+      Array [
+        "0.9",
+        "9001",
+      ],
+      Array [
+        "0.99",
+        "76656",
+      ],
+    ],
+    "count": "2693",
+    "labels": Array [],
+    "name": "telemetry_requests_metrics_latency_microseconds",
+    "sum": "1.7560473e+07",
+    "type": "summary",
+  },
+]
+`;
+
+exports[`parseText parses geth_sample.txt 1`] = `
+Array [
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_account_commits_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_account_commits",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_account_hashes_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_account_hashes",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_account_reads_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_account_reads",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_account_updates_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_account_updates",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_execution_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_execution",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_head_block",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_head_header",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_head_receipt",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_inserts_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_inserts",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_prefetch_executes_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_prefetch_executes",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_prefetch_interrupts",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_reorg_add",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_reorg_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_reorg_executes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_reorg_invalidTx",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_snapshot_account_reads_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_snapshot_account_reads",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_snapshot_commits_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_snapshot_commits",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_snapshot_storage_reads_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_snapshot_storage_reads",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_storage_commits_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_storage_commits",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_storage_hashes_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_storage_hashes",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_storage_reads_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_storage_reads",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_storage_updates_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_storage_updates",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_validation_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_validation",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "chain_write_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "chain_write",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "db_preimage_hits",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "10",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "db_preimage_total",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "10",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "discv5_InboundTraffic",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "discv5_OutboundTraffic",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_bodies_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_bodies_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_bodies_req_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "eth_downloader_bodies_req",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_bodies_timeout",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_headers_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_headers_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_headers_req_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "eth_downloader_headers_req",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_headers_timeout",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_receipts_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_receipts_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_receipts_req_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "eth_downloader_receipts_req",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_receipts_timeout",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_states_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_states_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_downloader_throttle",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_announces_dos",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_announces_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_announces_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_announces_out_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "eth_fetcher_block_announces_out",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_bodies",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_broadcasts_dos",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_broadcasts_drop",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_broadcasts_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_broadcasts_out_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "eth_fetcher_block_broadcasts_out",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_filter_bodies_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_filter_bodies_out",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_filter_headers_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_filter_headers_out",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_block_headers",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_announces_dos",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_announces_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_announces_known",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_announces_underpriced",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_broadcasts_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_broadcasts_known",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_broadcasts_otherreject",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_broadcasts_underpriced",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_fetching_hashes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_fetching_peers",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_queueing_hashes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_queueing_peers",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_replies_in",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_replies_known",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_replies_otherreject",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_replies_underpriced",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_request_done",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_request_fail",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_request_out",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_request_timeout",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_waiting_hashes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "eth_fetcher_transaction_waiting_peers",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_req_rtt_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_client_req_rtt",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_req_sendDelay_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_client_req_sendDelay",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_serverPool_connected",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_serverPool_dialed",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_serverPool_selectable",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_serverPool_sessionValue",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_serverPool_timeout",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_client_serverPool_totalValue",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_connection_client",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_connection_duration_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_connection_duration",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_connection_server",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_body",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_code",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_header",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_helperTrie",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_proof",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_receipt",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_total",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_txStatus",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_packets_txs",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_body",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_code",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_header",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_helperTrie",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_proof",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_receipt",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_total",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_txStatus",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_in_traffic_txs",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_body",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_code",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_header",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_helperTrie",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_proof",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_receipt",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_total",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_txStatus",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_packets_txs",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_body",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_code",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_header",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_helperTrie",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_proof",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_receipt",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_total",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_txStatus",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_out_traffic_txs",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_body_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_body",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_code_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_code",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_header_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_header",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_helperTrie_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_helperTrie",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_proof_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_proof",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_receipt_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_receipt",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_txStatus_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_txStatus",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_misc_serve_txs_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_misc_serve_txs",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_blockProcessingTime_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_blockProcessingTime",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_clientEvent_activated",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_clientEvent_connected",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_clientEvent_deactivated",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_clientEvent_disconnected",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_clientEvent_error",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_clientEvent_freeze",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_globalFactor",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_recentRequestEstimated",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_recentRequestServed",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_avgEstimatedTime",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_avgServedTime",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_estimatedTime_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_estimatedTime",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_body_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_body",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_code_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_code",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_header_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_header",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_helperTrie_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_helperTrie",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_proof_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_proof",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_receipt_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_receipt",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_txStatus_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_txStatus",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_relative_txs_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_relative_txs",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_req_servedTime_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "les_server_req_servedTime",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_servingQueue_queued",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_servingQueue_served",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_totalCapacity",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_totalConnected",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "les_server_totalRecharge",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "p2p_dials",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "p2p_egress",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "p2p_ingress",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "p2p_peers",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "p2p_serves",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "rpc_duration_all_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "rpc_duration_all",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "rpc_failure",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "rpc_requests",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "rpc_success",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_account_falsehit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_account_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_account_truehit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_error",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_storage_falsehit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_storage_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_bloom_storage_truehit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_account_hit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_account_inex",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_account_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_account_read",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_account_write",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_storage_hit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_storage_inex",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_storage_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_storage_read",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_clean_storage_write",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_hit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_hit_depth_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_hit_depth",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_inex",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_read",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_account_write",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_hit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_hit_depth_count",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "0",
+      ],
+      Array [
+        "0.75",
+        "0",
+      ],
+      Array [
+        "0.95",
+        "0",
+      ],
+      Array [
+        "0.99",
+        "0",
+      ],
+      Array [
+        "0.999",
+        "0",
+      ],
+      Array [
+        "0.9999",
+        "0",
+      ],
+    ],
+    "count": "NaN",
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_hit_depth",
+    "sum": "NaN",
+    "type": "summary",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_inex",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_read",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_dirty_storage_write",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_flush_account_item",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_flush_account_size",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_flush_storage_item",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "state_snapshot_flush_storage_size",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_cpu_goroutines",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "84",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_cpu_procload",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_cpu_sysload",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "4",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_cpu_syswait",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_cpu_threads",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "13",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_disk_readbytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "33358",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_disk_readcount",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "122",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_disk_readdata",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "33358",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_disk_writebytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "39181",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_disk_writecount",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "87",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_disk_writedata",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "39181",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_memory_allocs",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "37042",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_memory_frees",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "12959",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_memory_held",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "624558080",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_memory_pauses",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "75816100",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "system_memory_used",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "355213368",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_bloom_add",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_bloom_error",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_bloom_fault",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_bloom_load",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "13",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_bloom_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_bloom_test",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_clean_hit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "3",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_clean_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_clean_read",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "828",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_clean_write",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "276",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_commit_nodes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "13",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_commit_size",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1949",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_dirty_hit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_dirty_miss",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_dirty_read",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_dirty_write",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1533",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_flush_nodes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_flush_size",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_gc_nodes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "trie_memcache_gc_size",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_invalid",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_known",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_local",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_pending",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_pending_discard",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_pending_nofunds",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_pending_ratelimit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_pending_replace",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_queued",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_queued_discard",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_queued_eviction",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_queued_nofunds",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_queued_ratelimit",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_queued_replace",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_slots",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_underpriced",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": undefined,
+    "labels": Array [],
+    "name": "txpool_valid",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+]
+`;
+
+exports[`parseText parses histograms.txt 1`] = `
+Array [
+  Object {
+    "buckets": Array [
+      Array [
+        "0.05",
+        "24054",
+      ],
+      Array [
+        "0.1",
+        "33444",
+      ],
+      Array [
+        "0.2",
+        "100392",
+      ],
+      Array [
+        "0.5",
+        "129389",
+      ],
+      Array [
+        "1",
+        "133988",
+      ],
+      Array [
+        "+Inf",
+        "144320",
+      ],
+    ],
+    "count": "144320",
+    "labels": Array [
+      Object {
+        "name": "method",
+        "value": "GET",
+      },
+    ],
+    "name": "http_request_duration_seconds",
+    "sum": "53423",
+    "type": "histogram",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.05",
+        "124054",
+      ],
+      Array [
+        "0.1",
+        "133444",
+      ],
+      Array [
+        "0.2",
+        "1100392",
+      ],
+      Array [
+        "0.5",
+        "1129389",
+      ],
+      Array [
+        "1",
+        "1133988",
+      ],
+      Array [
+        "+Inf",
+        "1144320",
+      ],
+    ],
+    "count": "1144320",
+    "labels": Array [
+      Object {
+        "name": "method",
+        "value": "POST",
+      },
+    ],
+    "name": "http_request_duration_seconds",
+    "sum": "153423",
+    "type": "histogram",
+  },
+]
+`;
+
+exports[`parseText parses promtestdata.txt 1`] = `
+Array [
+  Object {
+    "buckets": Array [
+      Array [
+        "0",
+        "4.9351e-05",
+      ],
+      Array [
+        "0.25",
+        "7.424100000000001e-05",
+      ],
+      Array [
+        "0.5",
+        "8.3835e-05",
+      ],
+      Array [
+        "0.75",
+        "0.000106744",
+      ],
+      Array [
+        "1",
+        "0.002072195",
+      ],
+    ],
+    "count": "99",
+    "labels": Array [],
+    "name": "go_gc_duration_seconds",
+    "sum": "0.012139815",
+    "type": "summary",
+  },
+  Object {
+    "help": "Number of goroutines that currently exist.",
+    "labels": Array [],
+    "name": "go_goroutines",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "33",
+  },
+  Object {
+    "help": "Number of bytes allocated and still in use.",
+    "labels": Array [],
+    "name": "go_memstats_alloc_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.7518624e+07",
+  },
+  Object {
+    "help": "Total number of bytes allocated, even if freed.",
+    "labels": Array [],
+    "name": "go_memstats_alloc_bytes_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "8.3062296e+08",
+  },
+  Object {
+    "help": "Number of bytes used by the profiling bucket hash table.",
+    "labels": Array [],
+    "name": "go_memstats_buck_hash_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.494637e+06",
+  },
+  Object {
+    "help": "Total number of frees.",
+    "labels": Array [],
+    "name": "go_memstats_frees_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "4.65658e+06",
+  },
+  Object {
+    "help": "Number of bytes used for garbage collection system metadata.",
+    "labels": Array [],
+    "name": "go_memstats_gc_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.107968e+06",
+  },
+  Object {
+    "help": "Number of heap bytes allocated and still in use.",
+    "labels": Array [],
+    "name": "go_memstats_heap_alloc_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.7518624e+07",
+  },
+  Object {
+    "help": "Number of heap bytes waiting to be used.",
+    "labels": Array [],
+    "name": "go_memstats_heap_idle_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "6.668288e+06",
+  },
+  Object {
+    "help": "Number of heap bytes that are in use.",
+    "labels": Array [],
+    "name": "go_memstats_heap_inuse_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.8956288e+07",
+  },
+  Object {
+    "help": "Number of allocated objects.",
+    "labels": Array [],
+    "name": "go_memstats_heap_objects",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "72755",
+  },
+  Object {
+    "help": "Total number of heap bytes released to OS.",
+    "labels": Array [],
+    "name": "go_memstats_heap_released_bytes_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "Number of heap bytes obtained from system.",
+    "labels": Array [],
+    "name": "go_memstats_heap_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "2.5624576e+07",
+  },
+  Object {
+    "help": "Number of seconds since 1970 of last garbage collection.",
+    "labels": Array [],
+    "name": "go_memstats_last_gc_time_seconds",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.4843955586166437e+09",
+  },
+  Object {
+    "help": "Total number of pointer lookups.",
+    "labels": Array [],
+    "name": "go_memstats_lookups_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "2089",
+  },
+  Object {
+    "help": "Total number of mallocs.",
+    "labels": Array [],
+    "name": "go_memstats_mallocs_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "4.729335e+06",
+  },
+  Object {
+    "help": "Number of bytes in use by mcache structures.",
+    "labels": Array [],
+    "name": "go_memstats_mcache_inuse_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "9600",
+  },
+  Object {
+    "help": "Number of bytes used for mcache structures obtained from system.",
+    "labels": Array [],
+    "name": "go_memstats_mcache_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "16384",
+  },
+  Object {
+    "help": "Number of bytes in use by mspan structures.",
+    "labels": Array [],
+    "name": "go_memstats_mspan_inuse_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "211520",
+  },
+  Object {
+    "help": "Number of bytes used for mspan structures obtained from system.",
+    "labels": Array [],
+    "name": "go_memstats_mspan_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "245760",
+  },
+  Object {
+    "help": "Number of heap bytes when next garbage collection will take place.",
+    "labels": Array [],
+    "name": "go_memstats_next_gc_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "2.033527e+07",
+  },
+  Object {
+    "help": "Number of bytes used for other system allocations.",
+    "labels": Array [],
+    "name": "go_memstats_other_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "2.077323e+06",
+  },
+  Object {
+    "help": "Number of bytes in use by the stack allocator.",
+    "labels": Array [],
+    "name": "go_memstats_stack_inuse_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.6384e+06",
+  },
+  Object {
+    "help": "Number of bytes obtained from system for stack allocator.",
+    "labels": Array [],
+    "name": "go_memstats_stack_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.6384e+06",
+  },
+  Object {
+    "help": "Number of bytes obtained by system. Sum of all system allocations.",
+    "labels": Array [],
+    "name": "go_memstats_sys_bytes",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "3.2205048e+07",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "alerts",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "config",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "consoles",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "drop_series",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "federate",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "flags",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "771.655",
+      ],
+      Array [
+        "0.9",
+        "1761.823",
+      ],
+      Array [
+        "0.99",
+        "1761.823",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "graph",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "5803.93",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "heap",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "325.401",
+      ],
+      Array [
+        "0.9",
+        "414.708",
+      ],
+      Array [
+        "0.99",
+        "414.708",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "label_values",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "3995.574",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "options",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "1351.859",
+      ],
+      Array [
+        "0.9",
+        "1714.035",
+      ],
+      Array [
+        "0.99",
+        "2833.523",
+      ],
+    ],
+    "count": "462",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "prometheus",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "661851.54",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "3885.448",
+      ],
+      Array [
+        "0.9",
+        "4390.558",
+      ],
+      Array [
+        "0.99",
+        "4390.558",
+      ],
+    ],
+    "count": "6",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "query",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "26074.11",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "query_range",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "rules",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "series",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "212.311",
+      ],
+      Array [
+        "0.9",
+        "265.174",
+      ],
+      Array [
+        "0.99",
+        "265.174",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "static",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "6458.621",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "status",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "targets",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "version",
+      },
+    ],
+    "name": "http_request_duration_microseconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "alerts",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "config",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "consoles",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "drop_series",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "federate",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "flags",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "367",
+      ],
+      Array [
+        "0.9",
+        "389",
+      ],
+      Array [
+        "0.99",
+        "389",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "graph",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "1145",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "heap",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "416",
+      ],
+      Array [
+        "0.9",
+        "416",
+      ],
+      Array [
+        "0.99",
+        "416",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "label_values",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "1248",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "options",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "238",
+      ],
+      Array [
+        "0.9",
+        "238",
+      ],
+      Array [
+        "0.99",
+        "238",
+      ],
+    ],
+    "count": "462",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "prometheus",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "109956",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "531",
+      ],
+      Array [
+        "0.9",
+        "531",
+      ],
+      Array [
+        "0.99",
+        "531",
+      ],
+    ],
+    "count": "6",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "query",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "3186",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "query_range",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "rules",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "series",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "379",
+      ],
+      Array [
+        "0.9",
+        "379",
+      ],
+      Array [
+        "0.99",
+        "379",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "static",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "1137",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "status",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "targets",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "version",
+      },
+    ],
+    "name": "http_request_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "Total number of HTTP requests made.",
+    "labels": Array [
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+      Object {
+        "name": "handler",
+        "value": "graph",
+      },
+      Object {
+        "name": "method",
+        "value": "get",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "3",
+  },
+  Object {
+    "help": "Total number of HTTP requests made.",
+    "labels": Array [
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+      Object {
+        "name": "handler",
+        "value": "label_values",
+      },
+      Object {
+        "name": "method",
+        "value": "get",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "3",
+  },
+  Object {
+    "help": "Total number of HTTP requests made.",
+    "labels": Array [
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+      Object {
+        "name": "handler",
+        "value": "prometheus",
+      },
+      Object {
+        "name": "method",
+        "value": "get",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "462",
+  },
+  Object {
+    "help": "Total number of HTTP requests made.",
+    "labels": Array [
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+      Object {
+        "name": "handler",
+        "value": "query",
+      },
+      Object {
+        "name": "method",
+        "value": "get",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "6",
+  },
+  Object {
+    "help": "Total number of HTTP requests made.",
+    "labels": Array [
+      Object {
+        "name": "code",
+        "value": "200",
+      },
+      Object {
+        "name": "handler",
+        "value": "static",
+      },
+      Object {
+        "name": "method",
+        "value": "get",
+      },
+    ],
+    "name": "http_requests_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "3",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "alerts",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "config",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "consoles",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "drop_series",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "federate",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "flags",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "3619",
+      ],
+      Array [
+        "0.9",
+        "3619",
+      ],
+      Array [
+        "0.99",
+        "3619",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "graph",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "10857",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "heap",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "642",
+      ],
+      Array [
+        "0.9",
+        "642",
+      ],
+      Array [
+        "0.99",
+        "642",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "label_values",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "1926",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "options",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "3033",
+      ],
+      Array [
+        "0.9",
+        "3123",
+      ],
+      Array [
+        "0.99",
+        "3128",
+      ],
+    ],
+    "count": "462",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "prometheus",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "1.374097e+06",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "776",
+      ],
+      Array [
+        "0.9",
+        "781",
+      ],
+      Array [
+        "0.99",
+        "781",
+      ],
+    ],
+    "count": "6",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "query",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "4656",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "query_range",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "rules",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "series",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "6316",
+      ],
+      Array [
+        "0.9",
+        "6316",
+      ],
+      Array [
+        "0.99",
+        "6316",
+      ],
+    ],
+    "count": "3",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "static",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "18948",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "status",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "targets",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "handler",
+        "value": "version",
+      },
+    ],
+    "name": "http_response_size_bytes",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "A metric with a constant '1' value labeled by version, revision, branch, and goversion from which prometheus was built.",
+    "labels": Array [
+      Object {
+        "name": "branch",
+        "value": "",
+      },
+      Object {
+        "name": "goversion",
+        "value": "go1.7.3",
+      },
+      Object {
+        "name": "revision",
+        "value": "",
+      },
+      Object {
+        "name": "version",
+        "value": "",
+      },
+    ],
+    "name": "prometheus_build_info",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1",
+  },
+  Object {
+    "help": "Timestamp of the last successful configuration reload.",
+    "labels": Array [],
+    "name": "prometheus_config_last_reload_success_timestamp_seconds",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1.484395547e+09",
+  },
+  Object {
+    "help": "Whether the last configuration reload attempt was successful.",
+    "labels": Array [],
+    "name": "prometheus_config_last_reload_successful",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "1",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.01",
+        "1.7890000000000002e-06",
+      ],
+      Array [
+        "0.05",
+        "1.7890000000000002e-06",
+      ],
+      Array [
+        "0.5",
+        "1.7890000000000002e-06",
+      ],
+      Array [
+        "0.9",
+        "1.7890000000000002e-06",
+      ],
+      Array [
+        "0.99",
+        "1.7890000000000002e-06",
+      ],
+    ],
+    "count": "1",
+    "labels": Array [],
+    "name": "prometheus_evaluator_duration_seconds",
+    "sum": "1.7890000000000002e-06",
+    "type": "summary",
+  },
+  Object {
+    "help": "The total number of rule group evaluations skipped due to throttled metric storage.",
+    "labels": Array [],
+    "name": "prometheus_evaluator_iterations_skipped_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "Total number of alerts dropped due to alert manager missing in configuration.",
+    "labels": Array [],
+    "name": "prometheus_notifications_dropped_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The capacity of the alert notifications queue.",
+    "labels": Array [],
+    "name": "prometheus_notifications_queue_capacity",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "10000",
+  },
+  Object {
+    "help": "The number of alert notifications in the queue.",
+    "labels": Array [],
+    "name": "prometheus_notifications_queue_length",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": "The total number of rule evaluation failures.",
+    "labels": Array [
+      Object {
+        "name": "rule_type",
+        "value": "alerting",
+      },
+    ],
+    "name": "prometheus_rule_evaluation_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The total number of rule evaluation failures.",
+    "labels": Array [
+      Object {
+        "name": "rule_type",
+        "value": "recording",
+      },
+    ],
+    "name": "prometheus_rule_evaluation_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [],
+    "name": "prometheus_sd_azure_refresh_duration_seconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "Number of Azure-SD refresh failures.",
+    "labels": Array [],
+    "name": "prometheus_sd_azure_refresh_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "call",
+        "value": "service",
+      },
+      Object {
+        "name": "endpoint",
+        "value": "catalog",
+      },
+    ],
+    "name": "prometheus_sd_consul_rpc_duration_seconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [
+      Object {
+        "name": "call",
+        "value": "services",
+      },
+      Object {
+        "name": "endpoint",
+        "value": "catalog",
+      },
+    ],
+    "name": "prometheus_sd_consul_rpc_duration_seconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "The number of Consul RPC call failures.",
+    "labels": Array [],
+    "name": "prometheus_sd_consul_rpc_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of DNS-SD lookup failures.",
+    "labels": Array [],
+    "name": "prometheus_sd_dns_lookup_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of DNS-SD lookups.",
+    "labels": Array [],
+    "name": "prometheus_sd_dns_lookups_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [],
+    "name": "prometheus_sd_ec2_refresh_duration_seconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "The number of EC2-SD scrape failures.",
+    "labels": Array [],
+    "name": "prometheus_sd_ec2_refresh_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of File-SD read errors.",
+    "labels": Array [],
+    "name": "prometheus_sd_file_read_errors_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [],
+    "name": "prometheus_sd_file_scan_duration_seconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [],
+    "name": "prometheus_sd_gce_refresh_duration",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "The number of GCE-SD refresh failures.",
+    "labels": Array [],
+    "name": "prometheus_sd_gce_refresh_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "add",
+      },
+      Object {
+        "name": "role",
+        "value": "endpoints",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "add",
+      },
+      Object {
+        "name": "role",
+        "value": "node",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "add",
+      },
+      Object {
+        "name": "role",
+        "value": "pod",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "add",
+      },
+      Object {
+        "name": "role",
+        "value": "service",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "delete",
+      },
+      Object {
+        "name": "role",
+        "value": "endpoints",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "delete",
+      },
+      Object {
+        "name": "role",
+        "value": "node",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "delete",
+      },
+      Object {
+        "name": "role",
+        "value": "pod",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "delete",
+      },
+      Object {
+        "name": "role",
+        "value": "service",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "update",
+      },
+      Object {
+        "name": "role",
+        "value": "endpoints",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "update",
+      },
+      Object {
+        "name": "role",
+        "value": "node",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "update",
+      },
+      Object {
+        "name": "role",
+        "value": "pod",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "help": "The number of Kubernetes events handled.",
+    "labels": Array [
+      Object {
+        "name": "event",
+        "value": "update",
+      },
+      Object {
+        "name": "role",
+        "value": "service",
+      },
+    ],
+    "name": "prometheus_sd_kubernetes_events_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.5",
+        "NaN",
+      ],
+      Array [
+        "0.9",
+        "NaN",
+      ],
+      Array [
+        "0.99",
+        "NaN",
+      ],
+    ],
+    "count": "0",
+    "labels": Array [],
+    "name": "prometheus_sd_marathon_refresh_duration_seconds",
+    "sum": "0",
+    "type": "summary",
+  },
+  Object {
+    "help": "The number of Marathon-SD refresh failures.",
+    "labels": Array [],
+    "name": "prometheus_sd_marathon_refresh_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.01",
+        "0.046182157",
+      ],
+      Array [
+        "0.05",
+        "0.047306979000000006",
+      ],
+      Array [
+        "0.5",
+        "0.050381782",
+      ],
+      Array [
+        "0.9",
+        "0.052614556",
+      ],
+      Array [
+        "0.99",
+        "0.054404386000000006",
+      ],
+    ],
+    "count": "685",
+    "labels": Array [
+      Object {
+        "name": "interval",
+        "value": "50ms",
+      },
+    ],
+    "name": "prometheus_target_interval_length_seconds",
+    "sum": "34.512091221999995",
+    "type": "summary",
+  },
+  Object {
+    "help": "Total number of syncs that were executed on a scrape pool.",
+    "labels": Array [
+      Object {
+        "name": "scrape_job",
+        "value": "prometheus",
+      },
+    ],
+    "name": "prometheus_target_scrape_pool_sync_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "1",
+  },
+  Object {
+    "help": "Total number of scrapes that were skipped because the metric storage was throttled.",
+    "labels": Array [],
+    "name": "prometheus_target_skipped_scrapes_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+  Object {
+    "buckets": Array [
+      Array [
+        "0.01",
+        "0.00020043300000000002",
+      ],
+      Array [
+        "0.05",
+        "0.00020043300000000002",
+      ],
+      Array [
+        "0.5",
+        "0.00020043300000000002",
+      ],
+      Array [
+        "0.9",
+        "0.00020043300000000002",
+      ],
+      Array [
+        "0.99",
+        "0.00020043300000000002",
+      ],
+    ],
+    "count": "1",
+    "labels": Array [
+      Object {
+        "name": "scrape_job",
+        "value": "prometheus",
+      },
+    ],
+    "name": "prometheus_target_sync_length_seconds",
+    "sum": "0.00020043300000000002",
+    "type": "summary",
+  },
+  Object {
+    "help": "The current number of watcher goroutines.",
+    "labels": Array [],
+    "name": "prometheus_treecache_watcher_goroutines",
+    "timestamp": undefined,
+    "type": "gauge",
+    "value": "0",
+  },
+  Object {
+    "help": "The total number of ZooKeeper failures.",
+    "labels": Array [],
+    "name": "prometheus_treecache_zookeeper_failures_total",
+    "timestamp": undefined,
+    "type": "counter",
+    "value": "0",
+  },
+]
+`;
