@@ -27,8 +27,8 @@
         "prepare": "yarn build"
     },
     "dependencies": {
-        "@splunkdlt/debug-logging": "^1.0.1",
         "@splunkdlt/async-tasks": "^1.0.0",
+        "@splunkdlt/debug-logging": "^1.0.1",
         "node-fetch": "^2.6.0"
     },
     "devDependencies": {
