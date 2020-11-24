@@ -4,13 +4,14 @@ on:
     pull_request:
         paths:
             - 'packages/hec-client/**'
+            - '.github/workflows/hecintegrationtests.yml'
 
 jobs:
     hec-integration:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                splunk: [8.0.4, 7.3.5, 7.2.10.1]
+                splunk: [8.1.0.1, 8.0.4, 7.3.5, 7.2.10.1]
         services:
             splunk:
                 image: splunk/splunk:${{ matrix.splunk }}
