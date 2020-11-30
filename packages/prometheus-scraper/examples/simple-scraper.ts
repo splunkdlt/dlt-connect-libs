@@ -28,7 +28,7 @@ async function main() {
                     url: 'http://localhost:8080/debug/metrics/prometheus',
                 });
 
-                const convertedMetics = convertToHecMultiMetrics(scrapeResult.metrics, {
+                const convertedMetrics = convertToHecMultiMetrics(scrapeResult.metrics, {
                     captureTimestamp: Date.now(),
                     namePrefix: 'geth',
                     metadata: {
@@ -37,7 +37,7 @@ async function main() {
                     },
                 });
 
-                for (const hecMetrics of convertedMetics) {
+                for (const hecMetrics of convertedMetrics) {
                     hec.pushMetrics(hecMetrics);
                 }
 

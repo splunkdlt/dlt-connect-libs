@@ -6,7 +6,7 @@ import { ConvertOptions } from './types';
 
 type Labels = Array<{ name: string; value: string }>;
 
-export const convertTimestmapToHec = (ts: string | undefined, fallback: number): number => {
+export const convertTimestampToHec = (ts: string | undefined, fallback: number): number => {
     if (ts != null) {
         const n = parseInt(ts, 10);
         if (isNaN(n)) {
@@ -27,7 +27,7 @@ export function convertBase(
     const name = useDotNotation ? underscoreToDotNotation(metric.name) : metric.name;
     return {
         name: namePrefix ? concatMetricName(namePrefix, name, useDotNotation) : name,
-        time: convertTimestmapToHec(metric.timestamp, captureTimestamp),
+        time: convertTimestampToHec(metric.timestamp, captureTimestamp),
         fields: convertLabelsToHecFields(metric.labels),
         metadata: metadata,
     };
