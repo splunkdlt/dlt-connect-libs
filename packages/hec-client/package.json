@@ -1,7 +1,7 @@
 {
     "name": "@splunkdlt/hec-client",
     "author": "Splunk",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/hec-client",
     "repository": {
@@ -30,7 +30,7 @@
     "dependencies": {
         "@splunkdlt/async-tasks": "^1.0.0",
         "@splunkdlt/debug-logging": "^1.0.1",
-        "@splunkdlt/stats-collector": "^1.0.1",
+        "@splunkdlt/stats-collector": "^1.0.2",
         "abort-controller": "^3.0.0",
         "agentkeepalive": "^4.1.0",
         "bl": "^4.0.0",
