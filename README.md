@@ -30,6 +30,10 @@ Flexible client library for Splunk HTTP Event Collector (HEC) with support for s
 
 A set of helpers to perform an orderly shutdown of a collector process.
 
+### [`@splunkdlt/prometheus-scraper`](./packages/prometheus-scraper) [![npm version](https://badge.fury.io/js/%40splunkdlt%2Fprometheus-scraper.svg)](https://npm.im/%40splunkdlt%2Fprometheus-scraper)
+
+Utility to help scrape metrics from apps exposing prometheus-style metrics endpoints.
+
 ### [`@splunkdlt/stats-collector`](./packages/stats-collector) [![npm version](https://badge.fury.io/js/%40splunkdlt%2Fstats-collector.svg)](https://npm.im/%40splunkdlt%2Fstats-collector)
 
 A helper to collect stats (internal metrics) of a node process to send to Splunk.

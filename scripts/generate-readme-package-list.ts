@@ -27,10 +27,9 @@ function extractDescription(pkgPath: string): string | undefined {
     const pkgReadmePath = path.join(__dirname, '..', pkgPath, 'README.md');
     if (existsSync(pkgReadmePath)) {
         const contents = readFileSync(pkgReadmePath, { encoding: 'utf-8' });
-        const m = contents.match(/^# .+?\n\n(\w.+)/);
-        if (m) {
-            return m[1];
-        }
+        const lines = contents.split(/[\r\n]/);
+        const firstParagraph = lines.find((line) => line !== '' && !line.startsWith('#') && !line.startsWith('!'));
+        return firstParagraph;
     }
     return undefined;
 }
