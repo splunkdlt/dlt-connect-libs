@@ -40,6 +40,6 @@
         "typescript": "^3.8.3"
     },
     "peerDependencies": {
-        "@splunkdlt/hec-client": ">= 1.1.0"
+        "@splunkdlt/hec-client": ">= 1.2.0"
     }
 }
