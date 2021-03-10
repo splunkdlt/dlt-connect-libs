@@ -27,7 +27,7 @@ export function parseLine(line: string): Line {
             return { type: 'help', metricName: m[1], helpText: m[2] };
         }
 
-        m = trimmed.match(/^#\s*TYPE\s+([a-zA-Z_:][a-zA-Z0-9_:]*)\s+(counter|histogram|gauge|summary)/);
+        m = trimmed.match(/^#\s*TYPE\s+([a-zA-Z_:][a-zA-Z0-9_:]*)\s+(counter|histogram|gauge|summary|untyped)/);
         if (m != null) {
             return { type: 'type-info', metricName: m[1], typeName: m[2] as MetricType };
         }

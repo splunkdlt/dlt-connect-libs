@@ -19,6 +19,12 @@ describe('parseText', () => {
         const contents = readFileSync(join(__dirname, 'fixtures/geth_sample.txt'), { encoding: 'utf-8' });
         expect(parseText(contents)).toMatchSnapshot();
     });
+    it('parses federation_sample.txt', () => {
+        const contents = readFileSync(join(__dirname, 'fixtures/federation_sample.txt'), { encoding: 'utf-8' });
+        expect(
+            parseText(contents, { failOnInvalidLine: true, failOnDuplicateHelp: false, failOnDuplicateTypeInfo: false })
+        ).toMatchSnapshot();
+    });
 
     it('fails for invalid text', () => {
         expect(() => parseText('yolo')).toThrowErrorMatchingInlineSnapshot(

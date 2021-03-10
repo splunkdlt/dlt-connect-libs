@@ -25,13 +25,14 @@ export function convertMetricToHec(prometheusMetric: Metric, options: Partial<Co
     switch (prometheusMetric.type) {
         case 'counter':
         case 'gauge':
+        case 'untyped':
             return [scalarToHecMetric(prometheusMetric, effectiveOptions)];
         case 'summary':
             return summaryToHecMetrics(prometheusMetric, effectiveOptions);
         case 'histogram':
             return histogramToHecMetrics(prometheusMetric, effectiveOptions);
         default:
-            throw new Error(`Invalid prometheus metric type: ${prometheusMetric.type}`);
+            throw new Error(`Invalid prometheus metric type: ${(prometheusMetric as any)?.type}`);
     }
 }
 
