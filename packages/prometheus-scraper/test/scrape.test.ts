@@ -20,6 +20,7 @@ describe('scrapePrometheusMetrics', () => {
 
         expect(mockFetch.mock.calls.length).toBe(1);
         const fetchUrl = (mockFetch.mock.calls[0] as any)[0];
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { agent, ...fetchArgs } = (mockFetch.mock.calls[0] as any)[1];
         expect(fetchUrl).toMatchInlineSnapshot(`"http://foo.bar.com:1234/metrics"`);
         expect(fetchArgs).toMatchInlineSnapshot(`
@@ -33,7 +34,18 @@ describe('scrapePrometheusMetrics', () => {
               "timeout": undefined,
             }
         `);
-        expect(result.metrics).toMatchInlineSnapshot(`Array []`);
+        expect(result.metrics).toMatchInlineSnapshot(`
+            Array [
+              Object {
+                "help": undefined,
+                "labels": Array [],
+                "name": "metric_without_timestamp_and_labels",
+                "timestamp": undefined,
+                "type": "untyped",
+                "value": "12.47",
+              },
+            ]
+        `);
     });
 
     it('throws error for invalid content type', async () => {
