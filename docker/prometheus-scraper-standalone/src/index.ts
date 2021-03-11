@@ -10,7 +10,7 @@ import { scrapePeriodically } from './scrape';
 import { ConfigError } from './config';
 import chalk from 'chalk';
 
-const { debug, info, warn } = createModuleDebug('prometheus-scraper');
+const { debug, info, warn, error } = createModuleDebug('prometheus-scraper');
 
 if (process.env.NODE_ENV === 'development') {
     require('dotenv').config();
@@ -18,8 +18,8 @@ if (process.env.NODE_ENV === 'development') {
 
 class AbortResource implements ManagedResource {
     constructor(private promise: Promise<any>, private abortHandle: AbortHandle) {
-        promise.catch(() => {
-            warn('');
+        promise.catch((e) => {
+            warn('Unexpected rejection of promise in abort resource', e.stack);
         });
     }
     async shutdown() {
@@ -83,6 +83,8 @@ async function main() {
         convertOptions: convertConfig,
         dest: hec,
         scrapeInterval: envInt('SCRAPE_INTERVAL_MS', 5000),
+    }).catch((e) => {
+        error('Scrape job terminated with error', e);
     });
 
     const scraper = new AbortResource(scrapePromise, abortHandle);

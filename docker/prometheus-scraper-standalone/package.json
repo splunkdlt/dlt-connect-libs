@@ -1,8 +1,11 @@
 {
-    "name": "prometheus-scraper",
+    "name": "prometheus-scraper-standalone",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "license": "Apache-2.0",
+    "docker": {
+        "image": "ghcr.io/splunkdlt/prometheus-scraper"
+    },
     "dependencies": {
         "@splunkdlt/async-tasks": "^1.0.0",
         "@splunkdlt/debug-logging": "^1.0.1",
@@ -22,6 +25,6 @@
         "build": "ncc build src/index.ts",
         "dev": "NODE_ENV=development ts-node-dev --respawn src/index.ts",
         "test": "echo no tests",
-        "build:docker": "docker build -t prometheus-scraper-standalone -f ./Dockerfile ../.."
+        "build:docker": "docker build -t $npm_package_name -f ./Dockerfile ../.."
     }
 }

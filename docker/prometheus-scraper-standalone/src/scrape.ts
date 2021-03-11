@@ -38,8 +38,8 @@ export async function scrapePeriodically({
                 dest.pushMetrics(m);
             }
             const duration = Date.now() - captureTime;
-            debug(
-                'Scraped count=%d metrics (%d multi-metrics) in duration=%d ms',
+            info(
+                'Scraped count=%d prometheus metrics (%d multi-metrics) in duration=%d ms',
                 result.metrics.length,
                 hecMetrics.length,
                 duration
