@@ -3,7 +3,7 @@
     "author": "Splunk",
     "version": "1.0.0",
     "license": "Apache-2.0",
-    "homepage": "https://github.com/splunk/dlt-connect-libs/tree/master/packages/async-tasks",
+    "homepage": "https://github.com/splunk/dlt-connect-libs/tree/main/packages/async-tasks",
     "repository": {
         "type": "git",
         "url": "https://github.com/splunk/dlt-connect-libs",

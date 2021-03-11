@@ -217,7 +217,7 @@ If you want to change the contents of the commit, you can run `git cz --amend`. 
 
 ## Publishing
 
-Packages are published from the master branch, using lerna semantic-release-like publish flow:
+Packages are published from the main branch, using lerna semantic-release-like publish flow:
 
 ```sh-session
 $ yarn lerna publish --conventional-commits --no-commit-hooks
@@ -227,7 +227,7 @@ This requires access to Git and NPM (the @splunkdlt scope). There is currently n
 
 ### Pre-releases
 
-Pre-releases from changes not yet merged into master can be published as well:
+Pre-releases from changes not yet merged into main can be published as well:
 
 ```sh-session
 $ yarn lerna publish --canary --conventional-prerelease --preid=preview --pre-dist-tag=my-branch-preview
