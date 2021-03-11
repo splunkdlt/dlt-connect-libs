@@ -47,5 +47,13 @@ export const envBool = (variable: string, defaultValue?: boolean): boolean => {
 };
 
 export const envInt = (variable: string, defaultValue?: number): number => {
-    return defaultValue!;
+    const val = parseInt(process.env[variable] ?? '');
+
+    if (val == null || Number.isNaN(val)) {
+        if (defaultValue != null) {
+            return defaultValue;
+        }
+        throw new ConfigError(`Missing required environment variable ${variable}`);
+    }
+    return val;
 };
