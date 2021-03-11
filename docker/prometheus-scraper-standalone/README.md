@@ -1,6 +1,6 @@
 # Prometheus Scraper
 
-A simple docker images that uses the `@splunkdlt/prometheus-scraper` package to periodically scrape metrics from prometheus endpoint and forward it to a Splunk HTTP Event Collector.
+A simple docker image that uses the `@splunkdlt/prometheus-scraper` package to periodically scrape metrics from a prometheus endpoint and forwards them to a Splunk HTTP Event Collector.
 
 # Example Usage
 
