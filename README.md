@@ -40,6 +40,16 @@ A helper to collect stats (internal metrics) of a node process to send to Splunk
 
 <!-- PACKAGE-LIST-END -->
 
+## Docker Images
+
+<!-- DOCKER-IMAGE-LIST -->
+
+### [ghcr.io/splunkdlt/prometheus-scraper](./docker/prometheus-scraper-standalone)
+
+A simple docker image that uses the `@splunkdlt/prometheus-scraper` package to periodically scrape metrics from a prometheus endpoint and forwards them to a Splunk HTTP Event Collector.
+
+<!-- DOCKER-IMAGE-LIST-END -->
+
 ## Contributing
 
-Thank you for considering to contribute to Splunk Connect for Ethereum! Please read the [contribution guidelines](./CONTRIBUTING.md) and the [developer guide](./DEVELOPING.md) to get started.
+Thank you for considering to contribute to Splunk DLT Connect Libraries! Please read the [contribution guidelines](./CONTRIBUTING.md) and the [developer guide](./DEVELOPING.md) to get started.

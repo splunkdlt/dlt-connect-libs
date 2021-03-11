@@ -34,16 +34,32 @@ function extractDescription(pkgPath: string): string | undefined {
     return undefined;
 }
 
+type YarnInfo = {
+    [pkg: string]: {
+        location: string;
+        workspaceDependencies: string[];
+        mismatchedWorkspaceDependencies: string[];
+    };
+};
+
 async function main() {
     console.log('Generating package list in README');
     const readmePath = path.join(__dirname, '../README.md');
     const originalContents = readFileSync(readmePath, { encoding: 'utf-8' });
-    const yarnInfo = JSON.parse(execSync('yarn -s workspaces info').toString('utf-8'));
-    const markdownContents = Object.keys(yarnInfo).map((pkg) => {
-        const path: string = yarnInfo[pkg].location;
-        return `### [\`${pkg}\`](./${path}) ${generateVersionBadge(pkg)}\n\n${extractDescription(path)}`;
-    });
-    const updatedContents = replaceContent(originalContents, 'PACKAGE-LIST', markdownContents.join('\n\n'));
+    const yarnInfo: YarnInfo = JSON.parse(execSync('yarn -s workspaces info').toString('utf-8'));
+    const packageListContents = Object.entries(yarnInfo)
+        .filter(([_, pkg]) => pkg.location.startsWith('packages/'))
+        .map(([name, pkg]) => {
+            const path: string = pkg.location;
+            return `### [\`${pkg}\`](./${path}) ${generateVersionBadge(name)}\n\n${extractDescription(path)}`;
+        });
+    const dockerImageListContents = Object.entries(yarnInfo)
+        .filter(([_, pkg]) => pkg.location.startsWith('docker/'))
+        .map(([name, pkg]) => {
+            return `### [${name}](./${pkg.location})\n\n${extractDescription(pkg.location)}`;
+        });
+    let updatedContents = replaceContent(originalContents, 'PACKAGE-LIST', packageListContents.join('\n\n'));
+    updatedContents = replaceContent(originalContents, 'DOCKER-IMAGE-LIST', dockerImageListContents.join('\n\n'));
     writeFileSync(readmePath, updatedContents, { encoding: 'utf-8' });
     execSync(`prettier --write ${readmePath}`);
 }

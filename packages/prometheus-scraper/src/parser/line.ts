@@ -5,9 +5,9 @@ import { Label, parseLabelString } from './label';
 
 const { debug } = createModuleDebug('@splunkdlt/prometheus-scraper:parser:line');
 
-type MetricType = 'counter' | 'histogram' | 'gauge' | 'summary' | 'untyped';
+export type MetricType = 'counter' | 'histogram' | 'gauge' | 'summary' | 'untyped';
 
-type Line =
+export type Line =
     | { type: 'empty' }
     | { type: 'comment'; commentText: string }
     | { type: 'help'; metricName: MetricName; helpText: string }
@@ -27,7 +27,7 @@ export function parseLine(line: string): Line {
             return { type: 'help', metricName: m[1], helpText: m[2] };
         }
 
-        m = trimmed.match(/^#\s*TYPE\s+([a-zA-Z_:][a-zA-Z0-9_:]*)\s+(counter|histogram|gauge|summary)/);
+        m = trimmed.match(/^#\s*TYPE\s+([a-zA-Z_:][a-zA-Z0-9_:]*)\s+(counter|histogram|gauge|summary|untyped)/);
         if (m != null) {
             return { type: 'type-info', metricName: m[1], typeName: m[2] as MetricType };
         }
