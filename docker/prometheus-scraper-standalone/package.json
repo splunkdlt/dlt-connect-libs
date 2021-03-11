@@ -1,17 +1,17 @@
 {
     "name": "prometheus-scraper-standalone",
     "private": true,
-    "version": "0.0.1",
+    "version": "0.1.0",
     "license": "Apache-2.0",
     "docker": {
         "image": "ghcr.io/splunkdlt/prometheus-scraper"
     },
     "dependencies": {
-        "@splunkdlt/async-tasks": "^1.0.0",
-        "@splunkdlt/debug-logging": "^1.0.1",
-        "@splunkdlt/hec-client": "^1.2.0",
-        "@splunkdlt/managed-resource": "^1.0.2",
-        "@splunkdlt/prometheus-scraper": "^0.1.0",
+        "@splunkdlt/async-tasks": "^1.1.0",
+        "@splunkdlt/debug-logging": "^1.0.2",
+        "@splunkdlt/hec-client": "^1.2.1",
+        "@splunkdlt/managed-resource": "^1.1.0",
+        "@splunkdlt/prometheus-scraper": "^0.2.0",
         "chalk": "^4.1.0",
         "dotenv": "^8.2.0"
     },

@@ -1,7 +1,7 @@
 {
     "name": "@splunkdlt/cache",
     "author": "Splunk",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/main/packages/cache",
     "repository": {
@@ -27,7 +27,7 @@
         "prepare": "yarn build"
     },
     "devDependencies": {
-        "@splunkdlt/eslint-config-dlt-connect-lib": "^1.0.1",
+        "@splunkdlt/eslint-config-dlt-connect-lib": "^1.0.2",
         "tsdx": "^0.13.2",
         "tslib": "^1.11.2",
         "typescript": "^3.8.3"

@@ -1,7 +1,7 @@
 {
     "name": "@splunkdlt/hec-client",
     "author": "Splunk",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "license": "Apache-2.0",
     "homepage": "https://github.com/splunk/dlt-connect-libs/tree/main/packages/hec-client",
     "repository": {
@@ -28,16 +28,16 @@
         "prepare": "yarn build"
     },
     "dependencies": {
-        "@splunkdlt/async-tasks": "^1.0.0",
-        "@splunkdlt/debug-logging": "^1.0.1",
-        "@splunkdlt/stats-collector": "^1.0.2",
+        "@splunkdlt/async-tasks": "^1.1.0",
+        "@splunkdlt/debug-logging": "^1.0.2",
+        "@splunkdlt/stats-collector": "^1.0.3",
         "abort-controller": "^3.0.0",
         "agentkeepalive": "^4.1.0",
         "bl": "^4.0.0",
         "node-fetch": "^2.6.0"
     },
     "devDependencies": {
-        "@splunkdlt/eslint-config-dlt-connect-lib": "^1.0.1",
+        "@splunkdlt/eslint-config-dlt-connect-lib": "^1.0.2",
         "@types/bl": "^2.1.0",
         "@types/node-fetch": "^2.5.4",
         "tsdx": "^0.13.2",
