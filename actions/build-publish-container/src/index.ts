@@ -10,7 +10,7 @@ import { getCommitVersionTag } from './tag';
 type InputKey =
     | 'publish-type'
     | 'ghcr-org'
-    | 'ghcr-prerelease-name'
+    | 'ghcr-pre-release-name'
     | 'ghcr-release-name'
     | 'ghcr-user'
     | 'ghcr-pat'
@@ -30,7 +30,7 @@ export async function main(args: string[]) {
     const ghcr = {
         org: getInput('ghcr-org') || githubOrg,
         pkgName: getInput('ghcr-release-name') || repoName,
-        prereleasePkgName: getInput('ghcr-prerelease-name') || `${repoName}-pre`,
+        prereleasePkgName: getInput('ghcr-pre-release-name') || `${repoName}-pre`,
         user: getInput('ghcr-user', { required: true }),
         pat: getInput('ghcr-pat', { required: true }),
     };
@@ -42,7 +42,7 @@ export async function main(args: string[]) {
     await sh('docker', 'login', 'ghcr.io', '-u', ghcr.user, '-p', ghcr.pat);
 
     if (!(releaseType === 'pre-release' || releaseType === 'release')) {
-        throw new Error(`Invalid release type: ${JSON.stringify(releaseType)}. Expected "release" or "prerelease".`);
+        throw new Error(`Invalid release type: ${JSON.stringify(releaseType)}. Expected "release" or "pre-release".`);
     }
 
     const img = await buildPrereleaseDockerImage(ghcr.org, ghcr.prereleasePkgName, commitSHA);

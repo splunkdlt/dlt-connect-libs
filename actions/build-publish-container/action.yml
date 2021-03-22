@@ -8,7 +8,7 @@ inputs:
     ghcr-org:
         description: GitHub organization name to use for the ghcr.io registry. If not specified, the organization the repository is in will be used.
         required: false
-    ghcr-prerelease-name:
+    ghcr-pre-release-name:
         description: Package name to use for pre-releases. In not specified, the repository name with a "-pre" suffix will be used.
         required: false
     ghcr-release-name:
