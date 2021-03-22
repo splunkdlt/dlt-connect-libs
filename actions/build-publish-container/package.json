@@ -19,6 +19,6 @@
         "semver": "^7.3.4"
     },
     "scripts": {
-        "build": "ncc build src/index.ts"
+        "build": "ncc build src/index.ts -e encoding"
     }
 }
