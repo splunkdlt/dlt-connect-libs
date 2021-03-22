@@ -1,0 +1,21 @@
+name: Actions Checks
+
+on:
+    push:
+        paths:
+            - 'actions/**'
+
+jobs:
+    actions-build-check:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+            - name: ensure build is up-to-date
+              run: |
+                  cd actions/build-publish-container
+                  yarn install
+                  yarn build
+                  git diff --exit-code
