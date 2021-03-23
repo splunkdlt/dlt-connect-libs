@@ -1,0 +1,20 @@
+name: Actions Checks
+
+on: push
+
+jobs:
+    actions-build-check:
+        runs-on: ubuntu-latest
+        container:
+            image: ghcr.io/splunkdlt/connect-ci@sha256:10e6353d1bedecfb5a0100053ad0f0def1d2437e9ef79d0c3404ee877db5cad8
+        steps:
+            - uses: actions/checkout@v2
+            - name: ensure build is up-to-date
+              run: |
+                  cd actions/build-publish-container
+                  pwd
+                  node --version
+                  yarn install --frozen-lockfile
+                  yarn build
+                  git status --porcelain
+                  git diff --exit-code >/dev/null
