@@ -34,7 +34,7 @@
         "abort-controller": "^3.0.0",
         "agentkeepalive": "^4.1.0",
         "bl": "^4.0.0",
-        "node-fetch": "^2.6.0"
+        "node-fetch": "^3.1.1"
     },
     "devDependencies": {
         "@splunkdlt/eslint-config-dlt-connect-lib": "^1.0.2",
