@@ -15,7 +15,7 @@
         "@actions/exec": "^1.0.4",
         "@actions/github": "^4.0.0",
         "execa": "^5.0.0",
-        "node-fetch": "^2.6.1",
+        "node-fetch": "^2.6.7",
         "semver": "^7.3.4"
     },
     "scripts": {
